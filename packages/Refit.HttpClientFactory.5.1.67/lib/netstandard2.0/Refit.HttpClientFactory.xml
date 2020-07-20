@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Refit.HttpClientFactory</name>
+    </assembly>
+    <members>
+        <member name="M:Refit.HttpClientFactoryExtensions.AddRefitClient``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Refit.RefitSettings)">
+            <summary>
+            Adds a Refit client to the DI container
+            </summary>
+            <typeparam name="T">Type of the Refit interface</typeparam>
+            <param name="services">container</param>
+            <param name="settings">Optional. Settings to configure the instance with</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Refit.HttpClientFactoryExtensions.AddRefitClient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,Refit.RefitSettings)" -->
+    </members>
+</doc>

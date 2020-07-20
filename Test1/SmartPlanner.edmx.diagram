@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4b44585a024d44e58fed4a4d9cccfc69" Name="Diagram1">
+        <EntityTypeShape EntityType="SmartPlannerModel.Schedule" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartPlannerModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartPlannerModel.Tag" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartPlannerModel.Task" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartPlannerModel.TasksTag" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartPlannerModel.User" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartPlannerModel.UsersTask" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="SmartPlannerModel.FK_Schedule_Tasks" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartPlannerModel.FK_Schedule_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartPlannerModel.FK_Tags_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartPlannerModel.FK_TasksTags_Tags" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartPlannerModel.FK_TasksTags_Tasks" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartPlannerModel.FK_UsersTasks_Tasks" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartPlannerModel.FK_UsersTasks_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

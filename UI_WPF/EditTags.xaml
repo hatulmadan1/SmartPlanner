@@ -1,0 +1,43 @@
+﻿<Window x:Class="UI_WPF.EditTags"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI_WPF"
+        mc:Ignorable="d"
+        Title="EditTags" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen"
+        Style="{DynamicResource SmartPlanner}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Padding="20" MaxWidth="300" x:Name="currentTags" VerticalAlignment="Center"/>
+
+        <TextBlock Margin="15" Grid.Row="1" Grid.ColumnSpan="2" Text="Choose tag you want to add from list below." VerticalAlignment="Center"/>
+        <TextBlock Margin="15" Grid.Row="2" Grid.Column="0" Text="No required tag in list?" VerticalAlignment="Center"/>
+        <WrapPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBox Width="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" x:Name="NewTagName">#You_can</TextBox>
+            <Button Margin="5 0 0 0" Width="100" Style="{StaticResource SmartPlannerButton}" Content="create it!" Click="CreateTag"/>
+        </WrapPanel>
+
+        <ComboBox Grid.Row="3" Grid.Column="0" x:Name="TagsCouldBeAdded" Height="30" Width="150" IsEditable="True" MaxDropDownHeight="100"/>
+        <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource SmartPlannerButton}" Content="Add tag" Click="AddTag"/>
+        
+        <ComboBox Grid.Row="4" Grid.Column="0" x:Name="TagsCouldBeDeleted" Height="30" Width="150" IsEditable="True" MaxDropDownHeight="100"/>
+        <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource SmartPlannerButton}" Content="Delete tag" Click="DeleteTag"/>
+        
+        <WrapPanel Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,15,0.4,-0.2" Width="310">
+            <Button Style="{DynamicResource SmartPlannerButton}" IsDefault="True" Click="Accept_Click" MinWidth="60" Margin="0,0,10,0">OK</Button>
+            <Button Style="{DynamicResource SmartPlannerButton}" IsCancel="True" MinWidth="60">Cancel</Button>
+        </WrapPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="UI_WPF.Schedule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI_WPF"
+        mc:Ignorable="d"
+        Title="Schedule" Height="650" Width="600"
+        Style="{DynamicResource SmartPlanner}">
+    <Window.Resources>
+        <Style TargetType="ListBoxItem">
+            <Setter Property="Padding" Value="25 0"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="25 20" Padding="0 15 0 0" TextAlignment="Center" Text="My schedule" Grid.Column="0" Grid.Row="0" FontSize="22"/>
+        <TextBlock Margin="25 20" Padding="0 15 0 0" TextAlignment="Center" Grid.Column="1" Grid.Row="0" FontSize="22" x:Name="TotalTime"/>
+        
+        <ListBox Grid.Column="0" Grid.Row="1" Grid.RowSpan="4" Background="#e6e6fa" BorderThickness="0" x:Name="schedule"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="1" Content="Create schedule" Click="CreateScheduleButton"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="2" Content="Add task(s)" Click="AddTasksToScheduleButton"/>
+
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="3" Content="Complete Task" Click="CompleteTaskButton"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="4" Content="Delete task" Click="DeleteTaskFromScheduleButton"/>
+        
+    </Grid>
+</Window>

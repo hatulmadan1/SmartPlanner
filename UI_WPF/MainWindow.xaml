@@ -1,0 +1,44 @@
+﻿<Window Closed="SaveData" x:Class="UI_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="600"
+        Style="{DynamicResource SmartPlanner}"
+        MouseLeftButtonDown="Deselect">
+    <Window.Resources>
+        <Style TargetType="ListBoxItem">
+            <Setter Property="Padding" Value="25 0"/>
+        </Style>
+    </Window.Resources>
+    <Grid Style="{StaticResource SmartPlanner}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="25 20" Padding="0 15 0 0" TextAlignment="Center" Text="List of my tasks" Grid.Column="0" Grid.Row="0" FontSize="22"/>
+        <TextBlock Margin="25 20" Padding="0 15 0 0" TextAlignment="Center" Grid.Column="1" Grid.Row="0" FontSize="22" x:Name="TotalTime"/>
+
+        <ListBox Background="#e6e6fa" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="1" Grid.Column="0" x:Name="TaskList" BorderThickness="0">
+        </ListBox>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="1" Content="Create task" Click="AddNewTaskButton"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="2" Content="My schedule" Click="CreateScheduleButton"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="3" Content="Edit name" Click="EditSelectedTaskName"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="4" Content="Edit users" Click="EditUserList"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="5" Content="Edit tags" Click="EditTagList"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="6" Content="Completed" Click="ActualDurationTask"/>
+        <Button Style="{DynamicResource SmartPlannerButton}" Grid.Column="1" Grid.Row="7" Content="Delete task" Click="DeleteSelectedTask"/>
+    </Grid>
+</Window>

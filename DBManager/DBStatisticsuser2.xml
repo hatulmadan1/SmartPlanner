@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tags>
+  <tag>
+    <name>eda</name>
+    <duration>02:00:00</duration>
+    <quantity>2</quantity>
+  </tag>
+  <tag>
+    <name>my</name>
+    <duration>02:00:00</duration>
+    <quantity>3</quantity>
+  </tag>
+</tags>

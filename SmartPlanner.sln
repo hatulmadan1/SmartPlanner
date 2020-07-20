@@ -1,0 +1,124 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPlanner", "SmartPlanner\SmartPlanner.csproj", "{259D097A-0F10-4DFD-85BF-BC94B7199DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBManager", "DBMAnager\DBManager.csproj", "{0777301D-3C16-49E8-AB8B-A77C85498333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{5C56E167-A383-413B-9961-13A2A1359CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{308ADED3-956B-43F9-8A1D-19E7AC710B67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_WPF", "UI_WPF\UI_WPF.csproj", "{033E7F48-5684-4500-BDE0-A86DEA235E31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicForUI", "LogicForUI\LogicForUI.csproj", "{000CCD8B-EF83-44DE-B165-F72389C2862F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqAdditionalTask", "LinqAdditionalTask\LinqAdditionalTask.csproj", "{B03B1EA5-FB8B-4CFB-BFC6-F26FD413757C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Test\Server.csproj", "{558DA37A-514D-4E8F-B650-42F520EE3045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDataManager", "Test1\EFDataManager.csproj", "{3C03A96A-67A1-45F6-91D1-84FA5581FDAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerOnWeb", "ServerOnWeb\ServerOnWeb.csproj", "{F2683FEF-2B42-45D6-A3C5-C07E8643883A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading", "Multithreading\Multithreading.csproj", "{342C53CB-6472-438C-A9FE-7EF0A648C8D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{259D097A-0F10-4DFD-85BF-BC94B7199DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259D097A-0F10-4DFD-85BF-BC94B7199DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{259D097A-0F10-4DFD-85BF-BC94B7199DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259D097A-0F10-4DFD-85BF-BC94B7199DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0777301D-3C16-49E8-AB8B-A77C85498333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0777301D-3C16-49E8-AB8B-A77C85498333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0777301D-3C16-49E8-AB8B-A77C85498333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0777301D-3C16-49E8-AB8B-A77C85498333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C56E167-A383-413B-9961-13A2A1359CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C56E167-A383-413B-9961-13A2A1359CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C56E167-A383-413B-9961-13A2A1359CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C56E167-A383-413B-9961-13A2A1359CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{308ADED3-956B-43F9-8A1D-19E7AC710B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308ADED3-956B-43F9-8A1D-19E7AC710B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{308ADED3-956B-43F9-8A1D-19E7AC710B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308ADED3-956B-43F9-8A1D-19E7AC710B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033E7F48-5684-4500-BDE0-A86DEA235E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033E7F48-5684-4500-BDE0-A86DEA235E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033E7F48-5684-4500-BDE0-A86DEA235E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033E7F48-5684-4500-BDE0-A86DEA235E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{000CCD8B-EF83-44DE-B165-F72389C2862F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{000CCD8B-EF83-44DE-B165-F72389C2862F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{000CCD8B-EF83-44DE-B165-F72389C2862F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{000CCD8B-EF83-44DE-B165-F72389C2862F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B03B1EA5-FB8B-4CFB-BFC6-F26FD413757C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03B1EA5-FB8B-4CFB-BFC6-F26FD413757C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03B1EA5-FB8B-4CFB-BFC6-F26FD413757C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03B1EA5-FB8B-4CFB-BFC6-F26FD413757C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558DA37A-514D-4E8F-B650-42F520EE3045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558DA37A-514D-4E8F-B650-42F520EE3045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558DA37A-514D-4E8F-B650-42F520EE3045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558DA37A-514D-4E8F-B650-42F520EE3045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C03A96A-67A1-45F6-91D1-84FA5581FDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C03A96A-67A1-45F6-91D1-84FA5581FDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C03A96A-67A1-45F6-91D1-84FA5581FDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C03A96A-67A1-45F6-91D1-84FA5581FDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2683FEF-2B42-45D6-A3C5-C07E8643883A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2683FEF-2B42-45D6-A3C5-C07E8643883A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2683FEF-2B42-45D6-A3C5-C07E8643883A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2683FEF-2B42-45D6-A3C5-C07E8643883A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{342C53CB-6472-438C-A9FE-7EF0A648C8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342C53CB-6472-438C-A9FE-7EF0A648C8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{342C53CB-6472-438C-A9FE-7EF0A648C8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{342C53CB-6472-438C-A9FE-7EF0A648C8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F363CDB6-B7AC-40BD-AA9B-177733ED45F0}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/veeamacademy
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SmartPlanner\\SmartPlanner.csproj
+		SccProjectName1 = SmartPlanner
+		SccLocalPath1 = SmartPlanner
+		SccProjectUniqueName2 = DBMAnager\\DBManager.csproj
+		SccProjectName2 = DBMAnager
+		SccLocalPath2 = DBMAnager
+		SccProjectUniqueName3 = Entities\\Entities.csproj
+		SccProjectName3 = Entities
+		SccLocalPath3 = Entities
+		SccProjectUniqueName4 = BusinessLogic\\BusinessLogic.csproj
+		SccProjectName4 = BusinessLogic
+		SccLocalPath4 = BusinessLogic
+		SccProjectUniqueName5 = LogicForUI\\LogicForUI.csproj
+		SccProjectName5 = LogicForUI
+		SccLocalPath5 = LogicForUI
+		SccProjectUniqueName6 = UI_WPF\\UI_WPF.csproj
+		SccProjectName6 = UI_WPF
+		SccLocalPath6 = UI_WPF
+		SccProjectUniqueName7 = LinqAdditionalTask\\LinqAdditionalTask.csproj
+		SccProjectName7 = LinqAdditionalTask
+		SccLocalPath7 = LinqAdditionalTask
+		SccProjectUniqueName8 = Test\\Server.csproj
+		SccProjectName8 = Test
+		SccLocalPath8 = Test
+		SccProjectUniqueName9 = Test1\\EFDataManager.csproj
+		SccProjectName9 = Test1
+		SccLocalPath9 = Test1
+		SccProjectUniqueName10 = ServerOnWeb\\ServerOnWeb.csproj
+		SccProjectName10 = ServerOnWeb
+		SccLocalPath10 = ServerOnWeb
+		SccProjectUniqueName11 = Multithreading\\Multithreading.csproj
+		SccProjectName11 = Multithreading
+		SccLocalPath11 = Multithreading
+	EndGlobalSection
+EndGlobal
